@@ -21,7 +21,7 @@ export default {
 	margin: 0 auto;
 
 	.quote {
-		background-color: var(--light);
+		background-color: var(--dark);
 		padding: 16px;
 		border-radius: 16px;
 		margin-bottom: 16px;
