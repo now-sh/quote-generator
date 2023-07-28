@@ -39,7 +39,7 @@ export default {
   methods: {
     async fetchQuote() {
       const data = await fetch(
-        'https://animechan.vercel.app/api/random'
+        'https://animechan.xyz/api/random'
       ).then((res) => res.json());
 
       if (this.quote.content) {
