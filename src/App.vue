@@ -38,14 +38,10 @@ export default {
   },
   methods: {
     async fetchQuote() {
-      const data = await fetch(
-        'https://animechan.xyz/api/random'
-      ).then((res) => res.json());
-
+      const data = await fetch('https://api.casjay.coffee/api/v1/anime/quote').then((res) => res.json());
       if (this.quote.content) {
         this.quotes = [...this.quotes, this.quote];
       }
-
       this.quote = {
         anime: data.anime,
         character: data.character,
